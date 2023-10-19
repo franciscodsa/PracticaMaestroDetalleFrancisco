@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PracticaMaestroDetalleFrancisco</string>
+    <string name="name">name</string>
+    <string name="flechaDerecha"><![CDATA[->]]></string>
+    <string name="flechaIzquierda"><![CDATA[<-]]></string>
+    <string name="nombreDelPropietario">Nombre del propietario</string>
+    <string name="addButtonTxt">A</string>
+    <string name="deleteButtonTxt">D</string>
+    <string name="updateButtonTxt">U</string>
+    <string name="emailHint">Email</string>
+    <string name="numeroDeTelefono">Nº de telefono</string>
+    <string name="nombreDeMascotaHint">Nombre de mascota</string>
+    <string name="especieTxt">Especie:</string>
+    <string name="perroTxt">Perro</string>
+    <string name="gatoTxt">Gato</string>
+    <string name="comportamientoTxt">Comportamiento</string>
+    <string name="sliderDescriptionTxt">slider para valorar comportamiento</string>
+    <string name="buenoComportamientoTxt">Bueno</string>
+    <string name="maloComportamientoTxt">Malo</string>
+    <string name="esterilizadoTxt">Esterilizado</string>
+    <string name="vacunadoTxt">Vacunado</string>
+</resources>

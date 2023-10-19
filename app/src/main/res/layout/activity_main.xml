@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pantallamain.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextPropietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/nombreDelPropietario"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/addDeleteUpdateLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonAnterior"
+            android:layout_width="61dp"
+            android:layout_height="57dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/flechaIzquierda" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/addButtonTxt" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/deleteButtonTxt" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/updateButtonTxt" />
+
+        <Button
+            android:id="@+id/buttonSiguiente"
+            android:layout_width="61dp"
+            android:layout_height="57dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/flechaDerecha" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/emailHint"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="@+id/editTextPropietario"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPropietario" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/numeroDeTelefono"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextNombreMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nombreDeMascotaHint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComportamiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textViewEspecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/especieTxt" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioPerro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/perroTxt"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="243dp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioGato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gatoTxt" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewComportamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/comportamientoTxt"
+        app:layout_constraintBottom_toTopOf="@+id/sliderComportamiento"
+        app:layout_constraintEnd_toEndOf="@+id/sliderComportamiento"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/sliderComportamiento" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderComportamiento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/sliderDescriptionTxt"
+        android:valueFrom="0"
+        android:valueTo="10"
+        app:layout_constraintEnd_toStartOf="@+id/textViewComportamientoBueno"
+        app:layout_constraintStart_toEndOf="@+id/textViewComportamientoMalo"
+        app:layout_constraintTop_toTopOf="@+id/textViewComportamientoBueno" />
+
+    <TextView
+        android:id="@+id/textViewComportamientoBueno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/buenoComportamientoTxt"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sliderComportamiento" />
+
+    <TextView
+        android:id="@+id/textViewComportamientoMalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/maloComportamientoTxt"
+        app:layout_constraintEnd_toStartOf="@+id/sliderComportamiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sliderComportamiento" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxEsterilizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esterilizadoTxt"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVacunado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vacunadoTxt"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="459dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

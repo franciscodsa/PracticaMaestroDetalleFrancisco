@@ -1,0 +1,34 @@
+{
+  "fichaMascotas": [
+    {
+      "nombre": "Juan",
+      "email": "juan@mail.com",
+      "telefono": "87646413",
+      "nombreMascota": "Max",
+      "tipoMascota": "Perro",
+      "esterilizado": false,
+      "vacunado": true,
+      "edad": 5.0
+    },
+    {
+      "nombre": "Pepe",
+      "email": "pepe@mail.com",
+      "telefono": "648325432",
+      "nombreMascota": "Luna",
+      "tipoMascota": "Gato",
+      "esterilizado": false,
+      "vacunado": false,
+      "edad": 2.0
+    },
+    {
+      "nombre": "Alejandro",
+      "email": "ale@mail.com",
+      "telefono": "65432101",
+      "nombreMascota": "Simba",
+      "tipoMascota": "Gato",
+      "esterilizado": true,
+      "vacunado": true,
+      "edad": 8.5
+    }
+  ]
+}
